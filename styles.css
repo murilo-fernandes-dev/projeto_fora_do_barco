@@ -1,0 +1,64 @@
+/* Estilo para o fundo e centralização */
+body {
+    background-color: #ffffff; /* Fundo branco */
+    background-image: url('bg/mar.png'); /* Imagem de fundo */
+    background-size: cover; /* Faz a imagem de fundo cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: -1; /* Garante que a imagem de fundo fique atrás dos outros elementos */
+}
+
+/* Estilo do versículo */
+#verse {
+    font-family: 'Cinzel';/* Fonte personalizada */
+    white-space: pre-line; /* Permite quebras de linha */
+    text-align: center; /* Mantém centralizado */
+    font-size: 3.5em; /* Ajuste o tamanho do texto conforme necessário */
+    line-height: 1.5; /* Aumenta o espaçamento entre linhas */
+    max-width: 80%; /* Evita que o texto fique muito largo */
+    color: #000000; /* Mantém a cor legível */
+    font-weight: bold; /* Deixa o texto mais destacado */
+    position: relative; /* Garante que fique acima do fundo */
+    z-index: 1; /* Fica acima da imagem de fundo */
+}
+
+/* Estilizando a referência do versículo */
+#verse strong {
+    display: block; /* Faz a referência ir para uma nova linha */
+    margin-top: 10px; /* Espaço entre o texto e a referência */
+    font-size: 0.9em; /* Deixa a referência um pouco menor */
+    color: #000000; /* Tom mais suave para diferenciar */
+}
+
+/* Imagem da cruz no canto esquerdo */
+.image-container {
+    position: absolute;
+    top: 10px;;
+    left: 10px;
+    z-index: 2; /* Garante que as imagens fiquem acima do fundo */
+}
+
+#imagem {
+    width: 400px; /* Ajuste o tamanho da cruz conforme necessário */
+    height: auto;
+}
+
+/* Imagem adicional no canto direito */
+.image-container-right {
+    position: absolute;
+    top:10px;
+    right: 10px; /* Alinhado à direita */
+    z-index: 2; /* Garante que as imagens fiquem acima do fundo */
+}
+
+#imagem-direita {
+    width: 500px;/*Ajuste conforme necessário */
+    height: auto;
+}
